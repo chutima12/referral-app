@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>พรีวิวหน้าจอ — ระบบเพื่อนชวนเพื่อน Land for Loan</title>
+<style>
+:root{--red:#b00020;--red-dark:#7a0016;--gold:#d4af37;--bg:#fbf3f3;--ink:#2a2a2a;--muted:#777;--ok:#1b8a3a;--line:#e7d9d9}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,"Segoe UI","Sarabun",Tahoma,sans-serif;background:#ede3e3;color:var(--ink);line-height:1.5;padding:30px 16px}
+h1.title{text-align:center;color:var(--red-dark);margin-bottom:6px;font-size:24px}
+p.sub{text-align:center;color:var(--muted);margin-bottom:30px}
+.grid{display:flex;flex-wrap:wrap;gap:28px;justify-content:center;align-items:flex-start}
+.phone{width:340px;background:#fff;border-radius:28px;border:10px solid #1a1a1a;box-shadow:0 16px 40px rgba(0,0,0,.25);overflow:hidden}
+.screen{background:linear-gradient(160deg,#fff 0%,var(--bg) 100%);height:680px;overflow-y:auto;padding:18px 14px}
+.screen-label{text-align:center;font-weight:700;color:var(--red);margin:10px 0;font-size:15px}
+.brand{display:flex;align-items:center;gap:8px;font-weight:800;color:var(--red);font-size:17px;margin-bottom:6px}
+.brand .dot{width:24px;height:24px;border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center;font-size:13px}
+.hero{background:linear-gradient(135deg,var(--red),var(--red-dark));color:#fff;border-radius:16px;padding:18px;margin:10px 0 16px;box-shadow:0 10px 24px rgba(176,0,32,.25)}
+.hero h1{font-size:19px;line-height:1.3;margin-bottom:6px}
+.hero p{opacity:.92;font-size:13px}
+.badge{display:inline-block;background:var(--gold);color:#4a3500;font-weight:700;padding:3px 10px;border-radius:999px;font-size:11px;margin-bottom:9px}
+.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px;margin-bottom:14px;box-shadow:0 4px 14px rgba(0,0,0,.04)}
+.card h2{font-size:16px;margin-bottom:12px;color:var(--red-dark)}
+label{display:block;font-weight:600;font-size:13px;margin:10px 0 5px}
+input,select{width:100%;padding:11px 12px;border:1.5px solid var(--line);border-radius:9px;font-size:14px;font-family:inherit;background:#fff}
+.btn{display:block;width:100%;margin-top:16px;padding:13px;border:none;border-radius:11px;background:linear-gradient(135deg,var(--red),var(--red-dark));color:#fff;font-size:15px;font-weight:700;text-align:center;text-decoration:none;box-shadow:0 6px 14px rgba(176,0,32,.3)}
+.btn-ghost{background:#fff;color:var(--red);border:1.5px solid var(--red);box-shadow:none;margin-top:12px}
+.linkbox{display:flex;gap:6px;align-items:center;background:#fff7f7;border:1.5px dashed var(--red);border-radius:10px;padding:10px;margin-top:8px}
+.linkbox code{font-size:12px;word-break:break-all;color:var(--red-dark);flex:1}
+.linkbox .mini{background:var(--red);color:#fff;border:none;padding:7px 11px;border-radius:8px;font-size:12px;font-weight:600;white-space:nowrap}
+.stat-row{display:flex;gap:8px;margin:8px 0 4px}
+.stat{flex:1;background:#fff7f7;border:1px solid var(--line);border-radius:10px;padding:12px 6px;text-align:center}
+.stat .num{font-size:23px;font-weight:800;color:var(--red)}
+.stat .lbl{font-size:11px;color:var(--muted)}
+.progress{height:13px;background:#eee;border-radius:999px;overflow:hidden;margin:9px 0}
+.progress>div{height:100%;background:linear-gradient(90deg,var(--gold),#f0c75a)}
+table{width:100%;border-collapse:collapse;font-size:12px}
+th,td{padding:8px 6px;border-bottom:1px solid var(--line);text-align:left}
+th{background:var(--red);color:#fff;font-weight:600}
+.pill{display:inline-block;padding:2px 8px;border-radius:999px;font-size:11px;font-weight:600}
+.pill.ok{background:#e6f6ea;color:var(--ok)}
+.pill.wait{background:#fff3e0;color:#b26a00}
+.muted{color:var(--muted);font-size:12px}
+.center{text-align:center}
+.success-icon{font-size:40px;text-align:center}
+.note{font-size:11px;color:var(--muted);border-top:1px solid var(--line);margin-top:12px;padding-top:10px}
+.tag{display:inline-block;background:var(--red);color:#fff;font-size:12px;padding:4px 12px;border-radius:8px;margin:0 auto 8px;display:table}
+</style>
+</head>
+<body>
+<h1 class="title">🖥️ พรีวิวหน้าจอที่ลูกค้าจะเห็น</h1>
+<p class="sub">ระบบเพื่อนชวนเพื่อน • Land for Loan — (นี่คือภาพจำลอง ปุ่มยังกดไม่ได้ ของจริงกดได้ทุกปุ่ม)</p>
+
+<div class="grid">
+
+  <!-- 1. หน้าผู้แนะนำสมัคร -->
+  <div>
+    <div class="screen-label">1️⃣ ผู้แนะนำสมัคร → รับลิงก์</div>
+    <div class="phone"><div class="screen">
+      <div class="brand"><span class="dot">L</span> Land for Loan</div>
+      <div class="hero">
+        <span class="badge">เพื่อนชวนเพื่อน ชวนกันมารวย 🐯</span>
+        <h1>ชวนเพื่อนลงทุน รับค่าแนะนำ 10,000 บาท / รายชื่อ</h1>
+        <p>แนะนำครบ 5 คน รับฟรี! ตั๋วท่องเที่ยวฮ่องกง ✈️<br>*หมดเขต 30 ส.ค. 2569</p>
+      </div>
+      <div class="card">
+        <h2>สมัครเป็นผู้แนะนำ (รับลิงก์เฉพาะตัว)</h2>
+        <label>ชื่อ-นามสกุล *</label><input value="สมชาย ใจดี">
+        <label>เบอร์โทร *</label><input value="081-234-5678">
+        <label>ชื่อ LINE (ถ้ามี)</label><input placeholder="ไม่บังคับ">
+        <div class="btn">รับลิงก์ชวนเพื่อนของฉัน →</div>
+      </div>
+    </div></div>
+  </div>
+
+  <!-- 2. ได้ลิงก์แล้ว -->
+  <div>
+    <div class="screen-label">2️⃣ ได้ลิงก์เฉพาะตัวแล้ว</div>
+    <div class="phone"><div class="screen">
+      <div class="brand"><span class="dot">L</span> Land for Loan</div>
+      <div class="card">
+        <div class="success-icon">🎉</div>
+        <h2 class="center">สร้างลิงก์สำเร็จ! คุณสมชาย</h2>
+        <p class="muted center">ส่งลิงก์นี้ให้เพื่อน เมื่อเพื่อนกรอกผ่านลิงก์นี้ ระบบจะนับให้คุณอัตโนมัติ ✅</p>
+        <div class="linkbox"><code>lfl-referral.vercel.app/r/A3F9KM</code><span class="mini">คัดลอก</span></div>
+        <div class="btn btn-ghost">📊 ดูยอดการแนะนำของฉัน</div>
+        <div class="note">💡 รหัสผู้แนะนำของคุณคือ <b>A3F9KM</b> — ใช้เบอร์ 081-234-5678 เข้าดู Dashboard ได้ตลอด</div>
+      </div>
+    </div></div>
+  </div>
+
+  <!-- 3. หน้าเพื่อนกรอก -->
+  <div>
+    <div class="screen-label">3️⃣ เพื่อนเปิดลิงก์ → กรอกข้อมูล</div>
+    <div class="phone"><div class="screen">
+      <div class="brand"><span class="dot">L</span> Land for Loan</div>
+      <div class="hero">
+        <span class="badge">โอกาสลงทุน สร้างรายได้ มั่นคง ปลอดภัย</span>
+        <h1>ลงทุนจำนอง–ขายฝาก กับ Land for Loan</h1>
+        <p>มีอสังหาฯ ค้ำประกันทุกสัญญา • ผลตอบแทนมั่นคงทุกเดือน</p>
+      </div>
+      <div class="card">
+        <p class="muted" style="margin-bottom:8px">🤝 คุณได้รับการแนะนำโดย <b style="color:var(--red)">คุณสมชาย</b></p>
+        <h2>ลงทะเบียนรับข้อมูลการลงทุน</h2>
+        <label>ชื่อ-นามสกุล *</label><input value="สมหญิง รักลงทุน">
+        <label>เบอร์โทร *</label><input value="089-999-8888">
+        <label>จังหวัด/พื้นที่ทรัพย์ที่สนใจ</label><input value="กรุงเทพ">
+        <div class="btn">ลงทะเบียน รับการติดต่อกลับ →</div>
+        <div class="note">เจ้าหน้าที่จะติดต่อกลับภายใน 24 ชม.</div>
+      </div>
+    </div></div>
+  </div>
+
+  <!-- 4. Dashboard ผู้แนะนำ -->
+  <div>
+    <div class="screen-label">4️⃣ ผู้แนะนำดูยอดตัวเอง</div>
+    <div class="phone"><div class="screen">
+      <div class="brand"><span class="dot">L</span> Land for Loan</div>
+      <div class="card">
+        <h2>สวัสดี คุณสมชาย 👋</h2>
+        <div class="stat-row">
+          <div class="stat"><div class="num">4</div><div class="lbl">แนะนำทั้งหมด</div></div>
+          <div class="stat"><div class="num">3</div><div class="lbl">ลงทุนสำเร็จ</div></div>
+          <div class="stat"><div class="num">30,000</div><div class="lbl">ค่าแนะนำ (บาท)</div></div>
+        </div>
+        <label>ความคืบหน้าโบนัส (3/5 คน)</label>
+        <div class="progress"><div style="width:60%"></div></div>
+        <p class="muted">อีก 2 คน รับ ตั๋วท่องเที่ยวฮ่องกง 1 ใบ (ไป-กลับ) ✈️</p>
+      </div>
+      <div class="card">
+        <h2>รายชื่อที่คุณแนะนำ</h2>
+        <table>
+          <thead><tr><th>ชื่อเพื่อน</th><th>สถานะ</th><th>ค่าแนะนำ</th></tr></thead>
+          <tbody>
+            <tr><td>สมหญิง รักลงทุน</td><td><span class="pill ok">ลงทุนสำเร็จ</span></td><td>10,000 ✅</td></tr>
+            <tr><td>วิชัย มั่งมี</td><td><span class="pill ok">ลงทุนสำเร็จ</span></td><td>10,000 ✅</td></tr>
+            <tr><td>นภา ทรัพย์ดี</td><td><span class="pill ok">ลงทุนสำเร็จ</span></td><td>10,000</td></tr>
+            <tr><td>ก้อง เงินงอก</td><td><span class="pill wait">ติดต่อแล้ว</span></td><td>0</td></tr>
+          </tbody>
+        </table>
+        <div class="note">✅ = จ่ายค่าแนะนำแล้ว</div>
+      </div>
+    </div></div>
+  </div>
+
+</div>
+
+<p class="sub" style="margin-top:30px">🛠️ หน้า Admin (ทีมงานเท่านั้น) จะเป็นตารางจัดการสถานะ + แท็บสรุปว่าใครแนะนำสำเร็จจริง/ใครได้โบนัส</p>
+</body>
+</html>
